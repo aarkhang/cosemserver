@@ -4,8 +4,8 @@
 #include <string.h>
 #include "bsp_flash.h"
 #ifdef USE_UNIX_OS
-#include "unistd.h
-#else if (defined(USE_WINDOWS_OS))
+#include "unistd.h"
+#elif defined(USE_WINDOWS_OS)
 #include <io.h>
 #define access _access_s
 #define F_OK 0
